@@ -3,7 +3,7 @@
 
 ### 🚀 5.5x Speedup in Privacy Filtering using Sparse Johnson-Lindenstrauss Transform
 
-**Author:** Raghav Syal  
+**Author:** Raghav Syal, Raghav Dewan , Tanishq Goyal , Antash Kumar , Aryaman Singh
 **Institute:** Indraprastha Institute of Information Technology Delhi (IIITD)  
 **Tech Stack:** Python, Scikit-Learn, Spacy, Pandas
 
