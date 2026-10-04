@@ -13,7 +13,7 @@
 
 In the era of GDPR and strict data privacy, processing massive text streams (e.g., WhatsApp logs, Email dumps) for Personally Identifiable Information (PII) is computationally expensive. Traditional pipelines blindly run heavy Named Entity Recognition (NER) models (like BERT/RoBERTa) on *every* document.
 
-Our analysis of the `ai4privacy/pii-masking-300k` dataset revealed that **only ~12% of documents actually contain sensitive PII**.
+Our analysis of the `ai4privacy/pii-masking-300k` dataset revealed that a significant amount of data (appx. 12%) does not need anonymization
 
 **The Solution:**
 I implemented a **Scalable Privacy Pipeline** that introduces a lightweight binary classifier before the heavy anonymizer. By utilizing **Sparse Random Projection (Johnson-Lindenstrauss Transform)**, reduced feature dimensionality from 10,000 to 100 ($d \ll D$), achieving a **5.5x speedup** in processing time while maintaining ~90% accuracy in filtering safe documents.
